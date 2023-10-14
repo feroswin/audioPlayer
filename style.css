@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey: #d9d9d9;
+    --grey-100: #ababab;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.btn-play {
+    display: flex;
+    background: var(--grey);
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    width: fit-content;
+}
+
+.btn-play:hover {
+    background: var(--grey-100);
+}
+
+#oscilloscope {
+    margin-top: 25px;
+    width: 100%;
+    height: 200px;
+}
+
+.time {
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.wrapper-line-music {
+    display: flex;
+}
+
+.line-music {
+    width: 100%;
+}
+
+.manage-audio {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+#btn-autoplay.active {
+    background: #5d5d5d;
+}
+
+@media (max-width: 1399.98px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .container {
+        width: 992px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        width: 576px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+    }
+}

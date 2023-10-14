@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+    <input type="file" id="input-file">
+    <canvas id="oscilloscope"></canvas>
+    <div class="manage-audio">
+        <div class="wrapper-line-music">
+            <div class="time" id="current-time">00:00</div>
+            <input type="range" value="0" class="line-music" id="line">
+            <div class="time" id="duration">12:00</div>
+        </div>
+
+        <button class="btn-play" id="btn-play" data-active="false">
+            <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="20" height="20"><path d="M20.492,7.969,10.954.975A5,5,0,0,0,3,5.005V19a4.994,4.994,0,0,0,7.954,4.03l9.538-6.994a5,5,0,0,0,0-8.062Z"/></svg>
+        </button>
+        <button class="btn-play" id="btn-autoplay">
+            <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20"><path d="M1,12H0c0-3.859,3.14-7,7-7h15.777l-3.766-3.766,.707-.707,3.792,3.792c.651,.651,.651,1.71,0,2.361l-3.792,3.792-.707-.707,3.766-3.766H7c-3.309,0-6,2.691-6,6Zm22,0c0,3.309-2.691,6-6,6H1.223l3.766-3.766-.707-.707L.489,17.319c-.651,.651-.651,1.71,0,2.361l3.792,3.792,.707-.707-3.766-3.766h15.777c3.86,0,7-3.141,7-7h-1Z"/></svg>
+        </button>
+    </div>
+
+
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
